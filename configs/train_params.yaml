@@ -1,0 +1,35 @@
+model:
+  architecture: efficientnet_b0
+  pretrained: true
+  num_classes: 3
+  dropout: 0.3
+
+training:
+  epochs: 50
+  batch_size: 16
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  early_stopping_patience: 10
+  scheduler: cosine
+  warmup_epochs: 5
+
+data:
+  image_size: 224
+  train_split: 0.70
+  val_split: 0.15
+  test_split: 0.15
+  random_seed: 42
+
+classes:
+  0: normal          # z-line images (negative control)
+  1: barrett         # barrett's + barrett's-short-segment
+  2: esophagitis     # esophagitis-a + esophagitis-b-d
+
+augmentation:
+  horizontal_flip: true
+  vertical_flip: true
+  rotation_limit: 30
+  brightness_contrast: true
+  gaussian_blur: true
+  elastic_transform: true   # mimics tissue deformation in capsule images
+  mixup_alpha: 0.2

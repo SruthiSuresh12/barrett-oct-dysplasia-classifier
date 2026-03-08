@@ -1,0 +1,13 @@
+# Dysplasia Risk Score (DRS) weights
+# DRS = w1 * P(barrett) + w2 * texture_entropy + w3 * gland_irregularity_proxy - w4 * P(normal)
+
+weights:
+  barrett_probability: 0.50
+  texture_entropy: 0.25
+  gland_irregularity: 0.15
+  normal_penalty: 0.10
+
+thresholds:
+  low_risk: 0.30      # DRS < 0.30: routine surveillance
+  moderate_risk: 0.55 # DRS 0.30-0.55: 6-month follow-up
+  high_risk: 0.55     # DRS > 0.55: immediate biopsy referral
