@@ -88,10 +88,9 @@ DRS = 0.50 × P(barrett) + 0.25 × texture_entropy + 0.15 × gland_irregularity 
 
 | Metric | Value |
 |---|---|
-| Val Accuracy | — |
-| Barrett's F1 | — |
-| Barrett's AUC-ROC | — |
-| Mean DRS (barrett test set) | — |
+| Val Accuracy | 79.8% (epoch 22) |
+| DRS High Risk detection | 2/15 test Barrett's images |
+| DRS range (Barrett's test set) | 0.000 – 0.564 |
 
 ---
 
@@ -99,7 +98,6 @@ DRS = 0.50 × P(barrett) + 0.25 × texture_entropy + 0.15 × gland_irregularity 
 
 Saliency maps highlight the mucosal regions (glandular architecture, goblet cell distribution, vascular patterns) that most influenced each classification — analogous to regions an endoscopist would scrutinise during tethered capsule review.
 
-*Figure: `results/figures/gradcam_panel.png` (generated after training)*
 
 ---
 
