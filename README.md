@@ -170,10 +170,5 @@ barrett-oct-dysplasia-classifier/
 ## References
 
 - Borgli H et al. HyperKvasir, a comprehensive multi-class image and video dataset for gastrointestinal endoscopy. *Scientific Data* 2020. DOI: [10.1038/s41597-020-00622-y](https://doi.org/10.1038/s41597-020-00622-y)
-- Liang K et al. Ultrahigh speed en face OCT capsule for endoscopic imaging. *Biomedical Optics Express* 2015. DOI: [10.1364/BOE.6.001146](https://doi.org/10.1364/BOE.6.001146)
 - Tan M, Le QV. EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. *ICML* 2019. arXiv: [1905.11946](https://arxiv.org/abs/1905.11946)
 - Selvaraju RR et al. Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization. *ICCV* 2017. DOI: [10.1109/ICCV.2017.74](https://doi.org/10.1109/ICCV.2017.74)
-
----
-
-*Built as part of a computational biomedical engineering portfolio targeting applications in AI-assisted endoscopic diagnostics.*
